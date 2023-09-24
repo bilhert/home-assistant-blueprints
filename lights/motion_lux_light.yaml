@@ -28,9 +28,9 @@ blueprint:
       description: 'turn the light on when lux is below the threshold'
       default: "50"
     no_motion_wait:
-      name: Wait time
-      description: Time to leave the light on after last motion is detected.
-      default: 120
+      name: Grace period time
+      description: Time to leave the light on after last motion is detected before turning light off.
+      default: 30
       selector:
         number:
           min: 0
